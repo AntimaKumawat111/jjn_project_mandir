@@ -1,0 +1,89 @@
+.upper_container {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: relative;
+}
+
+#holiImg {
+  width: 35%;
+  height: auto;
+}
+
+.paragraph {
+  display: flex;
+  flex-direction: column;
+  color: #ff671f;
+  letter-spacing: 2px;
+  height: auto;
+  width: 50%;
+  font-size: 3rem;
+  text-overflow: clip;
+}
+
+@media screen and (max-width: 1500px) {
+  .paragraph {
+    font-size: 2.7rem;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #holiImg {
+    width: 40%;
+    height: 35%;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .upper_container {
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 100vh;
+  }
+
+  .paragraph {
+    font-size: 3.5rem;
+    width: 90%;
+    height: auto;
+    letter-spacing: 1px;
+  }
+
+  #holiImg {
+    margin-top: 8%;
+    width: 90%;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .paragraph {
+    font-size: 2.3rem;
+    letter-spacing: 2px;
+    height: auto;
+  }
+  #holiImg {
+    height: 35%;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  .paragraph {
+    font-size: 1.7rem;
+    letter-spacing: 0.5px;
+  }
+  
+  #holiImg {
+    height: 35%;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  .paragraph {
+    font-size: 1.5rem;
+    height: auto;
+  }
+  #holiImg {
+    height: 35%;
+  }
+}

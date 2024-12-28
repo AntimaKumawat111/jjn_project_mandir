@@ -1,0 +1,110 @@
+.container {
+  height: 100vh;
+  width: 100vw;
+  margin-top: 10px;
+}
+
+.potterContainer {
+  width: 100vw;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.overlay {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.top_box {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 100%;
+  width: auto;
+}
+
+.paragraph {
+  display: flex;
+  flex-direction: column;
+  letter-spacing: 2px;
+  height: auto;
+  width: 50%;
+  font-size: 3rem;
+  text-overflow: clip;
+  color: white;
+}
+
+#kidImage {
+  width: 35%;
+  height: 50%;
+}
+
+@media screen and (max-width: 1500px) {
+  .paragraph {
+    font-size: 2.7rem;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #kidImage {
+    width: 40%;
+    height: 40%;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .paragraph {
+    font-size: 2.4rem;
+  }
+
+  #kidImage {
+    width: 38%;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .top_box {
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+
+  .paragraph {
+    font-size: 2.8rem;
+    width: 90%;
+  }
+
+  #kidImage {
+    width: 90%;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .paragraph {
+    font-size: 2.3rem;
+    height: auto;
+  }
+
+  #kidImage {
+    height: 35%;
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  .paragraph {
+    font-size: 2rem;
+  }
+}

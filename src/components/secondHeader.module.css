@@ -1,0 +1,89 @@
+.tagscontanir {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-left: auto;
+  height: 38px;
+  width: 70%;
+  background-color: #e168308e;
+  border-bottom-left-radius: 50px;
+}
+
+.tagscontanir .atag {
+  font-size: 2rem;
+  margin: 2px;
+  color: black;
+  font-weight: 450;
+  text-decoration: none;
+}
+
+.tagContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 5px;
+  left: 25px;
+  font-size: 4rem;
+  outline: none;
+  margin-right: 50px;
+  color: white;
+}
+
+#menubtn {
+  font-size: 3rem;
+  margin-right: 25px;
+}
+
+@media screen and (min-width: 550px) {
+  .tagContainer {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 650px) {
+  .tagscontanir {
+    width: 80%;
+    justify-content: flex-end;
+  }
+  .tagscontanir .atag {
+    padding: 0%;
+    margin-right: 20px;
+    font-size: 2.3rem;
+    font-weight: 500;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .tagscontanir {
+    display: none;
+  }
+}
+

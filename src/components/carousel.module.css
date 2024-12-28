@@ -1,0 +1,161 @@
+.main_box {
+  display: flex;
+  flex-direction: row;
+  height: auto;
+}
+
+.carousel_box {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-left: auto;
+  width: 80%;
+}
+
+#hanuman {
+  width: 350px;
+  height: 150px;
+  filter: drop-shadow(10px 5px 9px black);
+}
+
+#p {
+  font-size: 2.8rem;
+  line-height: auto;
+  color: black;
+  width: 15%;
+  font-weight: bold;
+  text-align: center;
+  margin-right: 2%;
+}
+
+.carousel {
+  width: 75%;
+  height: 70%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  border-start-start-radius: 10px;
+  border-end-start-radius: 10px;
+  z-index: 1;
+}
+
+.carousel::before {
+  content: " ";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 25%;
+  background-image: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 1),
+    rgba(255, 255, 255, 0)
+  );
+  z-index: 1;
+}
+
+.images {
+  display: flex;
+  width: calc(173px * 7);
+  animation: scroll 15s linear infinite;
+}
+
+.images img {
+  width: 273px;
+  height: auto;
+  margin-right: 20px;
+  border-radius: 10px;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+@media screen and (max-width: 1250px) {
+  #p {
+    font-size: 2.3rem;
+  }
+}
+
+@media screen and (min-width: 1250px) {
+  #hanuman {
+    height: 200px;
+    width: auto;
+  }
+}
+@media screen and (max-width: 1020px) {
+  #p {
+    font-size: 1.9rem;
+  }
+  #hanuman {
+    height: 170px;
+    width: auto;
+  }
+}
+@media screen and (max-width: 900px) {
+  .main_box {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #hanuman {
+    height: 400px;
+    margin: 10px;
+  }
+
+  #p {
+    width: 100%;
+    font-size: 2.8rem;
+  }
+
+  .carousel_box {
+    display: block;
+    width: 100%;
+  }
+
+  .carousel {
+    width: 100%;
+    z-index: 0;
+    margin-top: 15px;
+  }
+
+  .images img {
+    height: 250px;
+    width: 80%;
+  }
+
+  .carousel::before {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  #hanuman {
+    height: auto;
+    width: 330px;
+  }
+  
+  .images img {
+    height: 180px;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  #hanuman {
+    height: auto;
+    width: 330px;
+  }
+
+  .images img {
+    height: 150px;
+    width: 100%;
+  }
+
+}
