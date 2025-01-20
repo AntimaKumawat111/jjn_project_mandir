@@ -1,21 +1,17 @@
-*{
+* {
   margin: 0%;
   padding: 0%;
 }
 
-html{
-  font-size: 62.50%;
+html {
+  font-size: 62.5%;
   scroll-behavior: smooth;
 }
 
-body{
+body {
   box-sizing: border-box;
-  border: 2px solid black;
-  background-color: lightblue;
   overflow-x: hidden;
   overflow-y: scroll;
   width: 100%;
   height: auto;
-
 }
-
